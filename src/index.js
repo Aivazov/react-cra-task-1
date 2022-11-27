@@ -5,13 +5,16 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-const el = React.createElement('div', {a: 5, b: 10});
+const el = React.createElement('div', {a: 5, b: 10, children: 'Hi there'});
+
+ReactDOM.render(el, document.getElementById('root'));
+
 console.log(el);
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+// root.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>
+// );
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
