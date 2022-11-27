@@ -1,7 +1,9 @@
 import logo from './logo.svg';
 
 import UserRendering from './components/User';
-import user from './user.json';
+import DataStatsTask from './components/DataTask2';
+import user from './data/user.json';
+import dataStats from './data/data.json';
 import './App.css';
 
 function App() {
@@ -45,7 +47,7 @@ function App() {
     //     </li>
     //   </ul>
     // </div>
-    // 
+    //
     <div className="App">
       <UserRendering
         imageSrc={user.avatar}
@@ -55,6 +57,24 @@ function App() {
         followers={user.stats.followers}
         views={user.stats.views}
         likes={user.stats.likes}
+      />
+
+      <DataStatsTask
+        id_1={dataStats[0].id}
+        label_1={dataStats[0].label}
+        percentage_1={dataStats[0].percentage}
+        id_2={dataStats[1].id}
+        label_2={dataStats[1].label}
+        percentage_2={dataStats[1].percentage}
+        id_3={dataStats[2].id}
+        label_3={dataStats[2].label}
+        percentage_3={dataStats[2].percentage}
+        id_4={dataStats[3].id}
+        label_4={dataStats[3].label}
+        percentage_4={dataStats[3].percentage}
+        id_5={dataStats[4].id}
+        label_5={dataStats[4].label}
+        percentage_5={dataStats[4].percentage}
       />
     </div>
   );

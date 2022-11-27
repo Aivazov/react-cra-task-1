@@ -1,4 +1,5 @@
-import defaultImage from "../components/default-image.jpg";
+import PropTypes from 'prop-types';
+import defaultImage from '../components/default-image.jpg';
 
 export default function UserRendering({
   imageSrc = defaultImage,
@@ -11,6 +12,7 @@ export default function UserRendering({
 }) {
   return (
     <div className="profile">
+      <h1>Task 1</h1>
       <div className="description">
         <img src={imageSrc} alt={cardTitle} width="200" className="avatar" />
         <p className="name">{userName}</p>
@@ -34,3 +36,13 @@ export default function UserRendering({
     </div>
   );
 }
+
+UserRendering.propTypes = {
+  imageSrc: PropTypes.string,
+  cardTitle: PropTypes.string,
+  userName: PropTypes.string,
+  location: PropTypes.string,
+  followers: PropTypes.number,
+  views: PropTypes.number,
+  likes: PropTypes.number,
+};

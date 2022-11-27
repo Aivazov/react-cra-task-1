@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import dataStats from "./data/data.json";
 import reportWebVitals from './reportWebVitals';
 // import user from './user.json';
 
@@ -20,7 +21,8 @@ const data = [
   },
 ];
 
-const painting = data[1];
+// const painting = data[1].url;
+// dataStats.map(el => console.log(el.id));
 
 function Painting(props) {
   console.log(props);
@@ -32,17 +34,13 @@ function Painting(props) {
   );
 }
 
-root.render(<App />);
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+
 // root.render(<Painting imageSrc={painting.url} cardTitle={painting.title} />);
-
-// ReactDOM.render(el, document.getElementById('root'));
-
-// console.log(el);
-// root.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>
-// );
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
