@@ -3,13 +3,41 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+// import user from './user.json';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-const el = React.createElement('div', {a: 5, b: 10, children: 'Hi there'});
+const root = ReactDOM.createRoot(document.querySelector('#root'));
 
-ReactDOM.render(el, document.getElementById('root'));
+const data = [
+  {
+    id: 'id-1',
+    url: 'https://cdn.pixabay.com/photo/2017/08/15/21/28/bird-2645674_960_720.jpg',
+    title: 'Ara parrots',
+  },
+  {
+    id: 'id-2',
+    url: 'https://cdn.pixabay.com/photo/2018/09/10/09/11/bird-3666579_960_720.jpg',
+    title: 'Flamingos',
+  },
+];
 
-console.log(el);
+const painting = data[1];
+
+function Painting(props) {
+  console.log(props);
+  return (
+    <div>
+      <img src={props.imageSrc} alt={props.cardTitle} width="480" />
+      <h2>{props.cardTitle}</h2>
+    </div>
+  );
+}
+
+root.render(<App />);
+// root.render(<Painting imageSrc={painting.url} cardTitle={painting.title} />);
+
+// ReactDOM.render(el, document.getElementById('root'));
+
+// console.log(el);
 // root.render(
 //   <React.StrictMode>
 //     <App />
