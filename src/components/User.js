@@ -1,7 +1,9 @@
+import defaultImage from "../components/default-image.jpg";
+
 export default function UserRendering({
-  imageSrc,
+  imageSrc = defaultImage,
   cardTitle,
-  userName,
+  userName = 'Alas, name is undefined',
   location,
   followers,
   views,
