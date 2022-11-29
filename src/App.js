@@ -2,8 +2,15 @@ import logo from './logo.svg';
 
 import UserRendering from './components/User';
 import DataStatsTask from './components/DataTask2';
+import Friends from './components/Friends';
+import FriendsList from './components/FriendsList';
+import Transaction from './components/Transaction';
+
 import user from './data/user.json';
 import dataStats from './data/data.json';
+import friends from './data/friends.json';
+import transaction from './data/transactions.json';
+
 import './App.css';
 
 function App() {
@@ -76,6 +83,33 @@ function App() {
         label_5={dataStats[4].label}
         percentage_5={dataStats[4].percentage}
       />
+
+      <Friends
+        firstFriendPic={friends[0].avatar}
+        firstFriendName={friends[0].name}
+        firstFriendStatus={friends[0].isOnline}
+        firstFriendId={friends[0].id}
+        secondFriendPic={friends[1].avatar}
+        secondFriendName={friends[1].name}
+        secondFriendStatus={friends[1].isOnline}
+        secondFriendId={friends[1].id}
+        thirdFriendPic={friends[2].avatar}
+        thirdFriendName={friends[2].name}
+        thirdFriendStatus={friends[2].isOnline}
+        thirdFriendId={friends[2].id}
+        fourthFriendPic={friends[3].avatar}
+        fourthFriendName={friends[3].name}
+        fourthFriendStatus={friends[3].isOnline}
+        fourthFriendId={friends[3].id}
+        fifthFriendPic={friends[4].avatar}
+        fifthFriendName={friends[4].name}
+        fifthFriendStatus={friends[4].isOnline}
+        fifthFriendId={friends[4].id}
+      />
+
+      <FriendsList friends={friends} />
+
+      <Transaction transactionItems={transaction} />
     </div>
   );
 }
