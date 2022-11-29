@@ -16,7 +16,9 @@ import './App.css';
 
 const Task = styled.p`
   font-size: 40px;
-  background-color: cyan;
+  background-color: rgb(36, 24, 24);
+  margin: 0;
+  color: white;
 `;
 
 function App() {

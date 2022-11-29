@@ -1,0 +1,25 @@
+.transaction_history {
+  border: 1px solid #ddd;
+  width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tableContent {
+}
+
+.tableRow {
+  border: 1px solid #ddd;
+  padding: 10px 50px;
+}
+
+.typeHead,
+.amountHead,
+.currencyHead {
+  background-color: rgb(35, 179, 204);
+  color: white;
+  font-size: 12px;
+  width: 100px;
+  padding: 10px 50px;
+  text-transform: uppercase;
+}
