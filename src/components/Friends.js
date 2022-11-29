@@ -24,7 +24,6 @@ export default function Friends({
 }) {
   return (
     <ul className="friend-list">
-      <h1>Task 3</h1>
       <li className="item">
         <span className="status">{firstFriendStatus}</span>
         <img

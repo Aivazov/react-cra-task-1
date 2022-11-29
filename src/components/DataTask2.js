@@ -19,7 +19,6 @@ export default function DataStatsTask({
 }) {
   return (
     <section className="statistics">
-      <h1>Task 2</h1>
       <h2 className="title">Upload stats</h2>
 
       <ul className="stat-list">

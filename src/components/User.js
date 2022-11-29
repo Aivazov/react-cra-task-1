@@ -12,7 +12,6 @@ export default function UserRendering({
 }) {
   return (
     <div className="profile">
-      <h1>Task 1</h1>
       <div className="description">
         <img src={imageSrc} alt={cardTitle} width="200" className="avatar" />
         <p className="name">{userName}</p>

@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 
+import styled from 'styled-components';
 import UserRendering from './components/User';
 import DataStatsTask from './components/DataTask2';
 import Friends from './components/Friends';
@@ -12,6 +13,11 @@ import friends from './data/friends.json';
 import transaction from './data/transactions.json';
 
 import './App.css';
+
+const Task = styled.p`
+  font-size: 40px;
+  background-color: cyan;
+`;
 
 function App() {
   return (
@@ -56,6 +62,7 @@ function App() {
     // </div>
     //
     <div className="App">
+      <Task>Task 1</Task>
       <UserRendering
         imageSrc={user.avatar}
         cardTitle={user.tag}
@@ -66,6 +73,7 @@ function App() {
         likes={user.stats.likes}
       />
 
+      <Task>Task 2</Task>
       <DataStatsTask
         id_1={dataStats[0].id}
         label_1={dataStats[0].label}
@@ -84,6 +92,7 @@ function App() {
         percentage_5={dataStats[4].percentage}
       />
 
+      <Task>Task 3</Task>
       <Friends
         firstFriendPic={friends[0].avatar}
         firstFriendName={friends[0].name}
@@ -108,6 +117,7 @@ function App() {
       />
 
       <FriendsList friends={friends} />
+      <Task>Task 4</Task>
 
       <Transaction transactionItems={transaction} />
     </div>
