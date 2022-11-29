@@ -1,16 +1,18 @@
 .transaction_history {
   border: 1px solid #ddd;
-  width: 800px;
-  display: flex;
-  flex-wrap: wrap;
+  min-width: 900px;
+  margin: 0 auto;
 }
 
 .tableContent {
+  /* display: flex;
+  flex-wrap: wrap; */
 }
 
 .tableRow {
   border: 1px solid #ddd;
   padding: 10px 50px;
+  color: #888;
 }
 
 .typeHead,

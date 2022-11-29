@@ -23,23 +23,23 @@ export default function DataStatsTask({
       <h2 className={css.title}>Upload stats</h2>
 
       <ul className={css.statList}>
-        <li className={css.item}>
+        <li className={css.item1}>
           <span className={css.label}>{label_1}</span>
           <span className={css.percentage}>{percentage_1}%</span>
         </li>
-        <li className={css.item}>
+        <li className={css.item2}>
           <span className={css.label}>{label_2}</span>
           <span className={css.percentage}>{percentage_2}%</span>
         </li>
-        <li className={css.item}>
+        <li className={css.item3}>
           <span className={css.label}>{label_3}</span>
           <span className={css.percentage}>{percentage_3}%</span>
         </li>
-        <li className={css.item}>
+        <li className={css.item4}>
           <span className={css.label}>{label_4}</span>
           <span className={css.percentage}>{percentage_4}%</span>
         </li>
-        <li className={css.item}>
+        <li className={css.item5}>
           <span className={css.label}>{label_5}</span>
           <span className={css.percentage}>{percentage_5}%</span>
         </li>
