@@ -95,7 +95,7 @@ function App() {
       />
 
       <Task>Task 3</Task>
-      <Friends
+      {/* <Friends
         firstFriendPic={friends[0].avatar}
         firstFriendName={friends[0].name}
         firstFriendStatus={friends[0].isOnline}
@@ -116,7 +116,7 @@ function App() {
         fifthFriendName={friends[4].name}
         fifthFriendStatus={friends[4].isOnline}
         fifthFriendId={friends[4].id}
-      />
+      /> */}
 
       <FriendsList friends={friends} />
       <Task>Task 4</Task>
